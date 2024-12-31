@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giới thiệu về Java và các ứng dụng của nó trong phát triển phần mềm.">
+    <meta name="keywords" content="Java, lập trình, ngôn ngữ lập trình, ứng dụng phần mềm">
+    <title>Giới thiệu về Java - Bài viết chi tiết</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1rem 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .blog-post-detail {
+            padding: 2rem 1rem;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 8px;
+        }
+
+        .blog-post-detail h1 {
+            font-size: 2.5rem;
+            color: #de3131;
+            margin-bottom: 1rem;
+        }
+
+        .post-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 1.5rem auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .blog-post-detail p {
+            margin: 1rem 0;
+        }
+
+        .blog-post-detail h2 {
+            color: #333;
+            margin-top: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .blog-post-detail ul,
+        .blog-post-detail ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .blog-post-detail ul li,
+        .blog-post-detail ol li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-to-blog {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-blog:hover {
+            background-color: #357abd;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            margin: 0 0.5rem;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #4a90e2;
+        }
+
+        footer p {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyBlog</div>
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="#about">GIỚI THIỆU</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-post-detail">
+            <article>
+                <a href="blog.html" class="back-to-blog">Quay lại Blog</a>
+                <span class="post-date">Ngày đăng: <time datetime="2024-12-31T10:00">21/12/2024 19:15</time></span>
+
+                <h1>Triển khai ứng dụng Java và JavaScript lên đám mây</h1>
+                <h2>Giới thiệu về JavaScript</h2>
+
+                <p>Hướng dẫn triển khai ứng dụng Java lên các nền tảng đám mây như AWS, Google Cloud, hoặc Azure. Cách triển khai ứng dụng JavaScript sử dụng dịch vụ lưu trữ tĩnh như Netlify hoặc Vercel.</p>
+                <img src="/img/dammay.jpeg" alt="JavaScript Cơ Bản" class="post-image">
+
+                <h2>Tính năng nổi bật của Java</h2>
+                <p><strong>Độc lập nền tảng:</strong>  Java cho phép chạy trên nhiều hệ điều hành mà không cần thay đổi mã nguồn.</p>
+                <p><strong>Hướng đối tượng:</strong>  Java hỗ trợ lập trình hướng đối tượng, giúp tổ chức mã nguồn dễ dàng và tái sử dụng.</p>
+                <p><strong>Đảm bảo an toàn:</strong>  Java có cơ chế bảo mật mạnh mẽ, giúp giảm thiểu các lỗ hổng bảo mật.</p>
+                <p><strong>Hỗ trợ đa luồng:</strong>  Java hỗ trợ lập trình đa luồng, giúp tối ưu hóa hiệu suất của ứng dụng.</p>
+                <h2>Ứng dụng của Java</h2>
+                <p>Java được sử dụng rộng rãi trong nhiều lĩnh vực, bao gồm:</p>
+                <p><strong>Phát triển ứng dụng web:</strong> Các ứng dụng web phức tạp có thể được xây dựng với Java.</p>
+                <p><strong>Phát triển ứng dụng di động:</strong> Java là ngôn ngữ chính cho phát triển ứng dụng Android.</p>
+                <p><strong>Hệ thống lớn và phân tán:</strong> Java rất phổ biến trong các hệ thống phân tán và ứng dụng doanh nghiệp lớn.</p>
+
+                <h2>Kết luận</h2>
+                <p>Java vẫn là một trong những ngôn ngữ lập trình phổ biến nhất và được sử dụng rộng rãi trong ngành công nghiệp phần mềm. Với tính linh hoạt, hiệu suất và bảo mật cao, Java là sự lựa chọn lý tưởng cho nhiều loại ứng dụng khác nhau.</p>
+
+
+
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1MXTkwxeTt/?mibextid=wwXIfr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ngoclllann?igsh=aGhtMjh5ZG91dzF4/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/ngocllan" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; NGỌC LAN</p>
+    </footer>
+</body>
+</html>

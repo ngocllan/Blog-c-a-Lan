@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giới thiệu về Java và các ứng dụng của nó trong phát triển phần mềm.">
+    <meta name="keywords" content="Java, lập trình, ngôn ngữ lập trình, ứng dụng phần mềm">
+    <title>Giới thiệu về Java - Bài viết chi tiết</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 1rem 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .blog-post-detail {
+            padding: 2rem 1rem;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 8px;
+        }
+
+        .blog-post-detail h1 {
+            font-size: 2.5rem;
+            color: #de3131;
+            margin-bottom: 1rem;
+        }
+
+        .post-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 1.5rem auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .blog-post-detail p {
+            margin: 1rem 0;
+        }
+
+        .blog-post-detail h2 {
+            color: #333;
+            margin-top: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .blog-post-detail ul,
+        .blog-post-detail ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .blog-post-detail ul li,
+        .blog-post-detail ol li {
+            margin-bottom: 0.5rem;
+        }
+
+        .back-to-blog {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            background-color:  #ce86c3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-blog:hover {
+            background-color:  #ce86c3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            margin: 0 0.5rem;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color:  #ce86c3;
+        }
+
+        footer p {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyBlog</div>
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="#courses">CHỨNG NHẬN</a></li>
+
+                <li><a href="#about">GIỚI THIỆU</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-post-detail">
+            <article>
+                <a href="blog.html" class="back-to-blog">Quay lại Blog</a>
+                <span class="post-date">Ngày đăng: <time datetime="2024-12-31T10:00">11/12/2024 22:01</time></span>
+
+                <h1>Kiểu dữ liệu và biến trong Java</h1>
+                <p>Hệ thống kiểu dữ liệu rõ ràng và của Java giúp người dùng khai báo và sử dụng biến hiệu quả.</p>
+
+                <h2>Giới thiệu</h2>
+
+                <p>Java có một hệ thống kiểu dữ liệu rõ ràng và chặt chẽ. Bài viết này sẽ giới thiệu về các kiểu dữ liệu cơ bản trong Java, như `int`, `double`, `char`, và `boolean`. Bạn cũng sẽ học cách khai báo và sử dụng biến, cũng như các phép toán cơ bản trong Java.</p>
+                <img src="/img/Ảnh màn hình 2024-12-18 lúc 21.46.31.png" alt="JavaScript Cơ Bản" class="post-image">
+
+                <h2>Các kiểu dữ liệu cơ bản</h2> 
+                <p>Java cung cấp các kiểu dữ liệu cơ bản sau:</p>
+
+                <p><strong>'int':</strong> Dùng để lưu trữ số nguyên (ví dụ: 10, -5).</p>
+                <p><strong>'double':</strong>Dùng để lưu trữ số thực (ví dụ: 3.14, -0.01).</p>
+                <p><strong>'char'':</strong>  Dùng để lưu trữ một ký tự (ví dụ: 'A', 'z').</p>
+                <p><strong>'boolean'':</strong> Dùng để lưu trữ giá trị đúng hoặc sai (`true` hoặc `false`). </p>
+                
+                <h2>Khai báo và sử dụng biến</h2>
+                <p>Biến trong Java được khai báo theo cú pháp sau:
+
+                    ```java
+                    <kiểu dữ liệu> <tên biến> = <giá trị>;
+                    ```
+                    
+                    Ví dụ:
+                    
+                    ```java
+                    int age = 25;
+                    double pi = 3.14;
+                    char grade = 'A';
+                    boolean isJavaFun = true;
+                    ```</p>
+                    <h2>Các phép toán cơ bản</h2>
+                    <p>Java hỗ trợ nhiều phép toán cơ bản như:</p>
+
+                <p><strong>Phép toán số học:</strong>`+`, `-`, `*`, `/`, `%` (chia lấy dư)..</p>
+                <p><strong>Phép toán so sánh:</strong>  `==`, `!=`, `<`, `>`, `<=`, `>=`.</p>
+                <p><strong>Phép toán logic:</strong> `&&` (AND), `||` (OR), `!` (NOT).                    </p>
+
+                    <p>Ví dụ:
+
+                        ```java
+                        int a = 10;
+                        int b = 20;
+                        System.out.println(a + b); // In ra 30
+                        System.out.println(a > b); // In ra false
+                        System.out.println(a < b && b > 15); // In ra true
+                        ```</p>
+
+                    
+                    </p>
+
+                <h2>Kết luận</h2>
+                <p>Việc hiểu rõ kiểu dữ liệu và cách sử dụng biến là nền tảng quan trọng khi lập trình Java. Hãy thực hành khai báo và sử dụng các biến để làm quen với các khái niệm này.</p>
+
+
+
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1MXTkwxeTt/?mibextid=wwXIfr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ngoclllann?igsh=aGhtMjh5ZG91dzF4/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/ngocllan" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; NGỌC LAN</p>
+    </footer>
+</body>
+</html>
